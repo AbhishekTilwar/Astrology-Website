@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me - Harsha</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .message {
+            font-size: 3rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        .message.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <section class="events section-padding" id="events">
+        <div class="container" style="padding: 40px 0;">
+          <div class="row align-items-center">
+            
+            <!-- Image Section -->
+            <div class="col-md-6 col-sm-12" style="text-align: center; margin-bottom: 20px;">
+              <div style="position: relative; width: 250px; height: 250px; margin: 0 auto;">
+                <img 
+                  src="img/astrologer.jfif" 
+                  alt="Profile Picture of Sohag Mia" 
+                  style="width: 100%; 
+                         height: 100%; 
+                         border-radius: 50%; 
+                         object-fit: cover; 
+                         position: relative; 
+                         z-index: 1;
+                         animation: zoomIn 1.5s ease-in-out;"
+                />
+                <!-- Bottom Half Frame -->
+                <div style="
+                      position: absolute;
+                      bottom: 0;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: 120%;
+                      height: 50%;
+                      background-color: #007BFF;
+                      border-radius: 0 0 150px 150px;
+                      z-index: 0;
+                      animation: slideUp 1.5s ease-in-out;">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Content Section -->
+            <div class="col-md-6 col-sm-12" style="color: #333; padding: 0 20px;">
+              <h3 style="color: #f9f8f8; animation: fadeInDown 1s ease;">Hi there!</h3>
+              <h1 style="font-size: 36px; margin-bottom: 20px; color: #f9f8f8;">
+                I'm 
+                <span style="color: #007BFF; font-weight: bold; animation: fadeInUp 1s ease;">Harsha Raut</span>
+              </h1>
+              <p style=" color: white;">
+              I am a full-time engineer at Reliance Jio, and this is my passion. 
+              I am a devoted astrologer with a passion for guiding individuals in their journey of love and relationships. 
+              With years of experience and deep-rooted knowledge in Vedic astrology, I specialize in offering insightful and compassionate readings that reveal the hidden dynamics of your romantic life. 
+              Over the years, I’ve dedicated myself to helping people understand their cosmic connections, navigate their love paths, and build harmonious relationships. 
+              Allow me to assist you in uncovering the celestial influences shaping your love life and finding the clarity you seek for a fulfilling and meaningful connection.
+          </p>
+          
+          <!-- Add this CSS in your stylesheet -->
+          <style>
+            @keyframes typing {
+              from { width: 0; }
+              to { width: 100%; }
+            }
+            
+            @keyframes blink-caret {
+              from, to { border-color: transparent; }
+              50% { border-color: white; }
+            }
+          </style>
+          
+              
+              <!-- Call to Actions -->
+              <div style="margin-top: 20px; animation: bounceIn 1.2s ease;">
+
+                <a href="coming_soon.html" target="_blank" style="text-decoration: none; 
+                                                                             color: #007BFF; 
+                                                                             border: 2px solid #007BFF; 
+                                                                             padding: 10px 20px; 
+                                                                             border-radius: 5px; 
+                                                                             display: inline-block;
+                                                                             transition: transform 0.3s ease;"
+                                         onmouseover="this.style.transform='scale(1.1)'"
+                                         onmouseout="this.style.transform='scale(1)'">
+                  <i class="fa fa-play"></i> Watch Video
+                </a>
+              </div>
+              
+              <!-- Footer Text -->
+              <div style="margin-top: 30px; font-size: 14px; color: #777; animation: fadeIn 1.5s ease;">
+                <p>
+                  © Astrologer
+                  <a href="coming_soon.html" target="_blank" style="color: #007BFF; text-decoration: none;">
+                    Love, Relationships and Marriage
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      
+        <!-- Add this CSS in your stylesheet -->
+        <style>
+          @keyframes zoomIn {
+            from {
+              transform: scale(0.8);
+              opacity: 0;
+            }
+            to {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+          @keyframes slideUp {
+            from {
+              transform: translateY(50%);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+          @keyframes fadeInDown {
+            from {
+              transform: translateY(-20px);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+          @keyframes fadeInUp {
+            from {
+              transform: translateY(20px);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          @keyframes bounceIn {
+            0% {
+              transform: scale(0.8);
+              opacity: 0;
+            }
+            60% {
+              transform: scale(1.05);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        </style>
+      </section>
+      
+</body>
+</html>
